@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Fun Finders - Users</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -16,16 +16,22 @@
             <th>Email</th>
         </tr>
 
-        {% for user in users %}
+        <!-- Static example data -->
         <tr>
-            <td>{{ user[0] }}</td>
-            <td>{{ user[1] }}</td>
-            <td>{{ user[2] }}</td>
+            <td>John</td>
+            <td>Doe</td>
+            <td>john@email.com</td>
         </tr>
-        {% endfor %}
+
+        <tr>
+            <td>Jane</td>
+            <td>Smith</td>
+            <td>jane@email.com</td>
+        </tr>
+
     </table>
 
-    <a href="/">Back to Registration</a>
+    <a href="index.html">Back to Registration</a>
 </div>
 
 </body>
